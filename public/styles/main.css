@@ -1,0 +1,286 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #d5e2ef;;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 125px;
+  transition: all 0.6s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px 40px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #fefefe, #d5d5d5);
+  box-shadow:  16px 16px 32px #c2c2c2,
+               -16px -16px 60px #ffffff;
+  
+}
+.container2 {
+  max-width: 800px;
+  /* margin: 50px auto; */
+  padding: 20px 40px;
+  border-radius: 100px;
+  background: linear-gradient(145deg, #f3f2f287, #e7e7e766);
+  box-shadow:  16px 16px 32px #c2c2c2,
+               -16px -16px 60px #ffffff;
+  
+}
+
+
+
+.topic {
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin-left: 20px;
+  color: #333333;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #d5d5d5, #fefefe);
+  box-shadow:  5px 5px 14px #c2c2c2,
+             -5px -5px 14px #ffffff;
+  position: fixed;
+  
+}
+
+/* header */
+header {
+  /* box-shadow:  5px 5px 50px #c2c2c2; */
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(100px);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} 
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  align-items: right;
+  padding-right: 50px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+
+.logo {
+  font-size: 2em;
+  transition: all 0.3s ease;
+}
+
+.shrink {
+  padding: 10px 10px;
+}
+
+.shrink .logo {
+  font-size: 1em;
+  text-align: left;
+  color: #007bff;
+}
+
+.body1{
+  margin-top: 60px;
+}
+
+/* Main content styles */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  /* color: #444; */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+p,
+input,
+textarea {
+  margin-bottom: 20px;
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  color: #888;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+a,
+button {
+  text-decoration: none;
+  /* background-color: #007bff; */
+  color: #fff;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.full-width {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+ul {
+  list-style-type: disclosure-closed;
+}
+
+li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ff7373;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+a.edit {
+  background-color: #007bff;
+
+}
+
+a.delete {
+  background-color: #e74c3c;
+}
+
+a.delete:hover {
+  background-color: #c0392b;
+}
+
+.container2 li {
+  all: unset;
+  border-bottom: 1px solid #ff7373;
+}
+
+
+#newPostBtn {
+  margin: 20px 0;
+  background-color: #2ecc71;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+#newPostBtn:hover {
+  background-color: #27ae60;
+}
+
+
+.footer {
+  box-shadow:  5px 5px 14px #c2c2c2;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(100px);
+  color: #333;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile Styles (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  header {
+      padding: 0.5em; /* Reduce padding */
+  }
+
+  nav ul {
+      margin-top: 5px; /* Add space above the navigation */
+      padding-right: 10px;
+  }
+
+  nav ul li {
+      /* display: block; Stack navigation items */
+      margin-right: 4px; /*Add spacing between items*/
+      text-align: center; /* Center align navigation links */
+      padding: 5px; /* Remove unnecessary padding */
+  }
+}
+
+.logo_1{
+  height: 80px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid rgb(0, 21, 255);
+}

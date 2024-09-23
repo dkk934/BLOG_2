@@ -1,0 +1,35 @@
+<%- include( 'partials/header' ) %> 
+
+<div style="position: fixed; margin-block: -20px;">
+  <%tables.forEach(tab=> { %>
+      <ul style="margin-bottom: 5px;"> 
+          <li style="display: inline-block;">
+              <button type="submit" class="topic"><%=tab.table_name%></button> 
+          </li>
+      </ul>
+  <% }); %>
+</div>
+
+  <div class="container">
+    <a id="newPostBtn" href="/new">New Post</a>
+    <ul id="postsList">
+      <% posts.forEach(post=> { %>
+        <li>
+          <h2>
+            <%=post.title%>
+          </h2>
+          <small>
+            <%=post.date %>
+          </small>
+          <p>
+            <%=post.content%>
+          </p>
+          <small>By: <%=post.author%> </small>
+          <a class="edit" href="/edit/<%= post.id %>">Edit</a>
+          <a class="delete" href="/api/posts/delete/<%= post.id %>">Delete</a>
+        </li>
+        <% }); %>
+    </ul>
+  </div>
+  
+<%- include( 'partials/footer' )%> 

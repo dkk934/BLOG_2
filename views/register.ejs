@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+
+
+
+
+  <div class="container">
+    <h1 class="heading">Register</h1>
+
+    <form action="/register" class="form" method="POST">
+
+      <input  class="input" type="email" name="username" id="email" placeholder="E-mail">
+
+      <input  class="input" type="password" name="password" id="password" placeholder="Password">
+
+      <input class="login-button" type="submit" value="Sign Up">
+    </form>
+
+    <div class="social-account-container">
+        <span class="title"> Sign Up with Google</span>
+        <div class="social-accounts">
+          <a href="/auth/google" style="all: unset;">
+            <button class="social-button google" >
+            
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512">
+              <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+            </svg>
+          </button>
+        </a>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
